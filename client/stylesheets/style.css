@@ -126,7 +126,8 @@ body {
     90% {opacity: 1;}
     100% {opacity: 0;}
 }
-.errors{
+
+.errors {
     position: fixed;
     z-index: 10000;
     padding: 10px;
@@ -136,7 +137,8 @@ body {
     bottom: 0px;
     pointer-events: none;
 }
-.alert {
+
+.errors .alert {
     animation: fadeOut 2700ms ease-in 0s 1 forwards;
     -webkit-animation: fadeOut 2700ms ease-in 0s 1 forwards;
     -moz-animation: fadeOut 2700ms ease-in 0s 1 forwards;
