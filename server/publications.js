@@ -6,7 +6,12 @@ Meteor.publish("posts", function(options) {
         sort: {submitted: Number},
         limit: Number
     });
-    return Posts.find({}, options);
+
+    if (this.userId) {
+        return Posts.find({}, options);
+    }
+
+    return [];
 });
 
 Meteor.publish("post", function(id) {
